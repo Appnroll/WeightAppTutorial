@@ -10,6 +10,12 @@ import UIKit
 
 class MainContentView: UIView {
 
+    var weight: Int = 0 {
+        didSet {
+            statusLabel.text = "\(weight)G"
+        }
+    }
+
     var circleImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit

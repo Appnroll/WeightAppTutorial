@@ -27,4 +27,23 @@ class ViewController: UIViewController {
         view.addConstraintsWithFormat(format: "H:|[v0]|", views: contentView)
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: contentView)
     }
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if traitCollection.forceTouchCapability == .available {
+                if touch.force >= touch.maximumPossibleForce {
+                    contentView.weight = 385
+                } else {
+                    let force = touch.force / touch.maximumPossibleForce
+                    let grams = force * 385
+                    let roundGrams = Int(grams)
+                    contentView.weight = roundGrams
+                }
+            }
+        }
+    }
+
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        contentView.weight = 0
+    }
 }
