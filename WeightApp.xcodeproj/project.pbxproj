@@ -11,6 +11,8 @@
 		DA87DD3822031713004F9F12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87DD3722031713004F9F12 /* ViewController.swift */; };
 		DA87DD3D22031714004F9F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA87DD3C22031714004F9F12 /* Assets.xcassets */; };
 		DA87DD4022031714004F9F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA87DD3E22031714004F9F12 /* LaunchScreen.storyboard */; };
+		DA87DD4C22031CC7004F9F12 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87DD4B22031CC7004F9F12 /* MainContentView.swift */; };
+		DA87DD4E22031D77004F9F12 /* UIView+ConstraintsWithFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA87DD4D22031D77004F9F12 /* UIView+ConstraintsWithFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DA87DD3C22031714004F9F12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA87DD3F22031714004F9F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA87DD4122031714004F9F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA87DD4B22031CC7004F9F12 /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		DA87DD4D22031D77004F9F12 /* UIView+ConstraintsWithFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ConstraintsWithFormat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				DA87DD3522031713004F9F12 /* AppDelegate.swift */,
+				DA87DD4B22031CC7004F9F12 /* MainContentView.swift */,
 				DA87DD3722031713004F9F12 /* ViewController.swift */,
 				DA87DD3C22031714004F9F12 /* Assets.xcassets */,
 				DA87DD3E22031714004F9F12 /* LaunchScreen.storyboard */,
 				DA87DD4122031714004F9F12 /* Info.plist */,
+				DA87DD4D22031D77004F9F12 /* UIView+ConstraintsWithFormat.swift */,
 			);
 			path = WeightApp;
 			sourceTree = "<group>";
@@ -133,6 +139,8 @@
 			files = (
 				DA87DD3822031713004F9F12 /* ViewController.swift in Sources */,
 				DA87DD3622031713004F9F12 /* AppDelegate.swift in Sources */,
+				DA87DD4E22031D77004F9F12 /* UIView+ConstraintsWithFormat.swift in Sources */,
+				DA87DD4C22031CC7004F9F12 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var contentView: MainContentView!
+
+    override func loadView() {
+        super.loadView()
+        setupView()
+        setupConstraints()
     }
 
+    fileprivate func setupView() {
+        contentView = MainContentView()
+        view.addSubview(contentView)
+    }
 
+    fileprivate func setupConstraints() {
+        view.addConstraintsWithFormat(format: "H:|[v0]|", views: contentView)
+        view.addConstraintsWithFormat(format: "V:|[v0]|", views: contentView)
+    }
 }
-
